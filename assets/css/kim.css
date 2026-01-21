@@ -1,0 +1,13 @@
+.hero {
+    display : flex;
+    align-content: center;
+    justify-content: center;
+    width : 100%;
+    padding: 2rem;
+    /* byt mot en bild eller nåt */
+    background-color: hotpink; 
+    & img {
+        border-radius: 9999px;
+        border: 1px solid rgba(0, 0, 0, 0.308)
+    }
+}
