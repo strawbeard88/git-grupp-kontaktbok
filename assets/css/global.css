@@ -1,0 +1,23 @@
+:root {
+    --backdark: #121213;
+    --backlight: #ffffff;
+    --textdark: #000000;
+    --textlight: #85DA5D;
+    --accentlightdark: #0e0e0e;
+    --accentdark: #3d3d3d;
+    --lightgray: #b3b3b3;
+    --buttongreen: #B3E99B;
+    --search: #303030;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--backdark);
+    color: var(--textlight);
+}
