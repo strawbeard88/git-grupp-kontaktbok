@@ -1,6 +1,8 @@
 .welcome-message {
     text-align: center;
-    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
 }
 
 .about-section {
