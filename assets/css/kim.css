@@ -1,0 +1,49 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+.hero {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+
+    background-image: url("../images/kim-hero-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    & .hero-profile {
+        border-radius: 9999px;
+    }
+    & .hero-text{
+        font-size: 140%;
+        padding:2rem;
+        align-self: center;
+        font-weight: bolder;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+    }
+    & p {
+        font-size: 110%
+    }
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+      text-align: center;
+        margin: 2rem 0 1rem 0;
+    }
+    & .skill-box {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem; 
+
+    }
+}
