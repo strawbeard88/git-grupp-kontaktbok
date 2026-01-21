@@ -3,7 +3,7 @@
     margin: 50px auto;
 }
 
-.about-section {
+.about-section-2 {
     background-color: var(--lightgray);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
