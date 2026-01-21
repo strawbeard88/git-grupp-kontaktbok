@@ -1,0 +1,119 @@
+
+.header {
+  display: flex;
+  background-color: var(--accentdark);
+  color: var(--textlight);
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color: var(--textlight);
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: var(--backlight);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--textlight);
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  justify-content: flex-start;
+}
+
+.right-section {
+  justify-content: flex-end;
+} 
+
+.right-section button {
+  min-width: 60px;
+  min-height: 32px;
+  align-self: flex-start;
+  background: var(--textlight);
+  color: var(--backdark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .06s ease, opacity .2s ease;
+  width: fit-content;
+}
+
+.right-section input {
+  padding: 0.5rem;
+  border: 4px solid var(--accentdark);
+  color: var(--backdark);
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+  margin-right: 0.5rem;
+  background: var(--search);
+
+}
+
+.right-section button:hover {
+  opacity: .70
+}
+
+.right-section input:focus,
+.right-section textarea:focus {
+    border-color: var(--textlight); 
+}
+
+@media (max-width: 1070px) {
+  .right-section {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--accentdark);
+    position: absolute;
+    top: 70px;      /* höjd på headern */
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    z-index: 3;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block; /* visa hamburgaren */
+    margin-left: auto;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+    font-size: 20px;
+  }
+}
