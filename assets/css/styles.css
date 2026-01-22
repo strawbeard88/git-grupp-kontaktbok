@@ -1,4 +1,28 @@
 .welcome-message {
     text-align: center;
-    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.about-section-2 {
+    background-color: var(--lightgray);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+.about-what {
+    max-width: 60ch;
+}
+.about-what > ul {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.align-center {
+    text-align: center;
+    justify-content: center;
+    padding: 0% auto;
 }
