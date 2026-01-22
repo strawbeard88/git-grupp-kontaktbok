@@ -24,16 +24,6 @@
   color: var(--backlight);
 }
 
-.menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--textlight);
-}
 
 .left-section,
 .right-section {
@@ -103,14 +93,6 @@
     z-index: 3;
   }
 
-  .menu-toggle:checked + .menu-icon + .nav {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block; /* visa hamburgaren */
-    margin-left: auto;
-  }
 
   .nav a {
     margin: 0.5rem 0;
