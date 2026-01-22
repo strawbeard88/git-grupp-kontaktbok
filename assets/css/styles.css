@@ -1,8 +1,5 @@
 .welcome-message {
     text-align: center;
-<<<<<<< HEAD
-    margin: 50px auto;
-=======
     justify-content: center;
     align-items: center;
     margin: 10% auto;
@@ -28,5 +25,4 @@
     text-align: center;
     justify-content: center;
     padding: 0% auto;
->>>>>>> main
 }
